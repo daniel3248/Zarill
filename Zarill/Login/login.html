@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Inicio de Sesion</title>
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="loginstyles.css">
+  <link rel="icon" href="../Img/logo.png" type="image/png">
+  
+</head>
+<body>
+  <div class="container" id="container">
+
+    <div class="form-container register-container">
+      <form action="register.php" method="POST">
+        <h1>Registrarme</h1>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <input type="password" name="confirm_password" placeholder="Repite la contraseña" required>
+        <button type="submit">Registrarme</button>
+      </form>
+    </div>
+
+    <div class="form-container login-container">
+      <form action="login.php" method="POST">
+        <h1>Iniciar sesión</h1>
+        <input type="email" name="email" required placeholder="Email">
+        <input type="password" name="password" required placeholder="Contraseña"> <!-- IMPORTANTE: name="password" -->
+        <div class="content"> 
+          <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label>Recuérdame</label>
+          </div>
+          <div class="pass-link">
+            <a href="../Resetpassword/forgotpassword.php">¿Olvidaste tu contraseña?</a>
+          </div>
+        </div>
+        <button type="submit">Iniciar sesión</button>
+      </form>
+    </div>    
+
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1 class="title">Hola <br> </h1>
+          <p>Si tienes una cuenta, inicia sesion aqui</p>
+          <button class="ghost" id="login">Iniciar sesión
+            <i class="lni lni-arrow-left login"></i>
+          </button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1 class="title">Crea una cuenta <br> </h1>
+          <p>Si aun no tienes cuenta, hazla aqui.</p>
+          <button class="ghost" id="register">Registrarme
+            <i class="lni lni-arrow-right register"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="loginstylescript.js"></script>
+  
+</body>
+</html>

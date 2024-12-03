@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  background-color: #f6f5f7; /* Fondo general */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  background: linear-gradient(to right, #832df3, #995fe6);
+  background-color: #995fe6; /* Morado */
+  color: #fff; /* Letra blanca */
+  padding: 30px 50px;
+  border-radius: 25px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1.title {
+    font-size: 45px;
+    line-height: 45px;
+    margin: 0;
+  }
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra de texto */
+}
